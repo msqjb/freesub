@@ -4,22 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 01 - xiaohe",
-      "server": "34.176.98.128",
+      "type": "trojan",
+      "tag": "🇮🇶 IQ 01 - xiaohe",
+      "server": "104.21.16.123",
       "server_port": 443,
-      "uuid": "4fe7ceb2-160c-4564-89e6-8f5fd0b05cd5",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "7x7o3vtq5z6ymu3hv1fh-op9blt.hya6losm6lznoxhm6w3mk.workers.dev",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3ekBKAuIIAOjtkKJ0T-qpC7uJsqsY2fVLRB6C70A5hw",
-          "short_id": "d7676b6a468a03b3"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/qL8YIeH28wNcXfNTPgLCwOhNFEr?ed=2560",
+        "headers": {
+          "Host": "7x7o3vtq5z6ymu3hv1fh-op9blt.hya6losm6lznoxhm6w3mk.workers.dev"
         }
       }
     },
@@ -28,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇱 智利 (Chile) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇱 智利 (Chile) 01 - xiaohe"
+        "🇮🇶 IQ 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
