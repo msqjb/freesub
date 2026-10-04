@@ -22,8 +22,8 @@ proxies:
   uuid: 2d24e797-ec6c-0808-dd31-9cd22b5dfdc7
   tls: true
   reality-opts:
-    public-key: iVDh09Vm2DqZMNQoUdf-LCZ6TqVGb9mLXnClAK2LRj4
-  servername: www.canon.com
+    public-key: WtLZK1KyhSpI3K-R4M3sLAHWPOgGPMgkL6RneL0OfCY
+  servername: download.nvidia.com
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
