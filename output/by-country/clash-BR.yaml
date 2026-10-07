@@ -5,32 +5,142 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaohe
-  server: aksai.org
+  server: 172.67.75.194
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
+  tls: true
+  servername: c7dabe95.proxy-978.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c7dabe95.proxy-978.pages.dev
+- name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  server: 104.21.67.113
   port: 443
   udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aksai.org
+  type: trojan
+  password: Telegram_healer_config
+  sni: x0C3lq1A15ip-65Kc4-l1A1tx.cv4CGvqS05m-F4Hg5xU07wIAlm0.wOrkerS.DeV
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /tr/rkSn26veCGpvDy162Z?ed=2560
+- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  server: 104.21.69.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+  tls: true
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/uWq9DFRgj8BwQiSXmZ46
     headers:
-      Host: aksai.org
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 04 - xiaohe
+  server: 104.26.4.57
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
+  tls: true
+  servername: c7dabe95.proxy-978.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c7dabe95.proxy-978.pages.dev
+- name: 🇧🇷 巴西 (Brazil) 05 - xiaohe
+  server: 104.24.31.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇧🇷 巴西 (Brazil) 06 - xiaohe
+  server: 188.114.96.3
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 756e8f39-04e8-436d-b5c6-905d37d9562c
+  tls: true
+  servername: Ez-98919A.MOtoRicb.Workers.DeV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiR1BxUFhYR0w1TlBLMTRsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ
+    headers:
+      Host: ez-98919a.motoricb.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 07 - xiaohe
+  server: 022xw1dmczg0c6165pcla6.tomborn69.workers.dev
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5d4f5139-6965-42ed-8dba-fe3ef9fed7c1
+  tls: true
+  servername: 022xW1dMCzG0c6165PCla6.TOMBorn69.woRKERS.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/fw89i0TpKDRV7i25w2uWIf?ed=2560
+    headers:
+      Host: 022xw1dmczg0c6165pcla6.tomborn69.workers.dev
+- name: 🇧🇷 巴西 (Brazil) 08 - xiaohe
+  server: 104.21.29.250
+  port: 443
+  udp: true
+  type: trojan
+  password: LcICDcp!jD9TFV$NbH
+  sni: dl2uF-iVdeZILZ3E86rK18.Hhvt37tjm2XBOsQL5HXogN-Y.woRKERS.dEv
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/pg4wM48V9O859nmqsJg22EOFKN4S570y?ed=2560
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 04 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 05 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 06 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 07 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 02 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 04 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 05 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 06 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 07 - xiaohe
+  - 🇧🇷 巴西 (Brazil) 08 - xiaohe
 rules:
 - MATCH,PROXIES
